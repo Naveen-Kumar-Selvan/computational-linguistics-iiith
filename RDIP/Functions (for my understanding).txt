@@ -1,0 +1,45 @@
+						UNDERSTANDING OF FUNCTIONS IN VIRTUAL LABS:
+
+INTRODUCTION SECTION:
+
+	// When this tab is pressed, it should show the Introduction of the experiment.
+
+THEORY SECTION:
+
+	// When this tab is pressed, it should display the Theory of the experiment.
+
+OBJECTIVE SECTION:
+
+	// When this tab is pressed, it should show the Objective of the experiment.
+
+EXPERIMENT SECTION:
+
+	// If the user selects Experiment button, it should display a drop down for selecting the language which has two options i.e. ENGLISH & HINDI.
+
+	// Whenever the language is selected, it has to show the FORM A SENTENCE heading along with the JUMBLED WORDS.
+
+	// When we select a word from the given jumbled words, that word has to be displayed separately along with a FORMED SENTENCE heading.
+
+	// When REFORM SENTENCE button is pressed, it should push all the words to the initial jumbled state.
+
+	// If all the words in the jumbled portion  are used in framed sentence then it should enable the CHECK THE CORRECTNESS OF THIS SENTENCE button.
+
+	// When CHECK THE CORRECTNESS OF THIS SENTENCE is pressed, it should check the correctness of the sentence by comparing the correct answer and the given answer. 
+	If the answer is correct, it will display RIGHT answer!!! Otherwise it will show WRONG answer!!!
+
+	// If the answer is WRONG, it should show an another button called GET CORRECT SENTENCE.
+
+	// When GET CORRECT SENTENCE is pressed, it should display the correct sentence. 
+	When this happens, the GET CORRECT SENTENCE should be changed to HIDE THE CORRECT SENTENCE.
+
+	// When HIDE THE CORRECT SENTENCE is being pressed, it should go back to the initial state of showing GET ANSWERS button and WRONG ANSWER!!! which is in red color.
+
+QUIZZES SECTION:
+
+	// When this tab is pressed, it should display the Quizzes of the experiment.
+
+PROCEDURE SECTION:
+
+	// When this tab is pressed, it should show the Procedure of the experiment.
+
+    **------------------------------------------------- THE END -----------------------------------------------------------**
