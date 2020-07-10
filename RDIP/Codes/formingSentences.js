@@ -116,6 +116,19 @@ var sentenceHindi7 = [
 	' है वहाँ बड़ी सी एक किताब '
 ];
 
+// Dropdown List
+function message(){
+	if(document.getElementById("list1").selected)
+	{
+		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
+		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
+	}
+	if(document.getElementById("list2").selected)
+	{
+		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
+		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
+	}
+}
 
 
 	
