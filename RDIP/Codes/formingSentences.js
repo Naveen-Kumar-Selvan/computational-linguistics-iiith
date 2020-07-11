@@ -53,7 +53,19 @@ var sentenceEnglish10 = [
 	'I bought a book yesterday that I told her',
 	'yesterday I bought a book that I told her'
 ];
-
+var collectionOfEnglishSentence = [
+	'I told her that I bought a book yesterday',
+	'John ate an apple so did she',
+	'the woman who called my sister sells cosmetics',
+	'John went to church after eating',
+	'some students like to study in the night',
+	'John ate an apple before afternoon',
+	'John and Mary went to church',
+	'did he go to market',
+	'John goes to the library and studies',
+	'the teacher returned the book after she noticed the error'
+];	
+	
 // Hindi sentences
 var sentenceHindi1 = [
 	' राम और श्याम बाजार गयें ',
@@ -115,18 +127,74 @@ var sentenceHindi7 = [
 	' है वहाँ एक बड़ी सी किताब ',
 	' है वहाँ बड़ी सी एक किताब '
 ];
-
+var collectionOfHindiSentence = [
+	' एक बड़ी सी किताब वहाँ है ',
+	' बिल्लियों को मारकर कुत्ता सो गया ',
+	' मैंने उसे बताया कि राम सो रहा है ',
+	' राम और श्याम बाजार गयें ',
+	' राम सोया और श्याम भी ',
+	' राम खाकर सोया ',
+	' एक लाल किताब वहाँ है '
+];
+	
 // Dropdown List
 function message(){
-	if(document.getElementById("list1").selected)
+	document.getElementById("description2").innerHTML = '';
+	count = 0;
+	if(document.getElementById("list0").selected)
 	{
-		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
-		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
+		alert("Select Language");
 	}
-	if(document.getElementById("list2").selected)
+	else if(document.getElementById("list1").selected)
 	{
 		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
+		var english = collectionOfEnglishSentence [Math.floor(Math.random() * collectionOfEnglishSentence.length)];
+		var body = document.getElementsByTagName("p")[3];
+		separate = english.split(' ');
+		for(initial = 0; initial < separate.length; initial++)
+		{
+			next = Math.floor(Math.random() * separate.length);
+			english = separate [initial];
+			separate[initial] = separate[next];
+			separate[next] = english;
+		}
+		for(initial = 0; initial < separate.length; initial++)
+		{
+			var button = document.createElement("button");
+			button.innerHTML = separate[initial];
+			body.appendChild(button);
+		}
+			
+	}
+	else if(document.getElementById("list2").selected)
+	{
+		document.getElementById("description2").innerHTML = '';
+		count = 0;
+		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
+		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
+		var hindi = collectionOfHindiSentenceSentence [Math.floor(Math.random() * collectionOfHindiSentence.length)];
+		var body = document.getElementsByTagName("p")[3];
+		separate1 = hindi.split(' ');
+		for(initial = 0; initial < separate1.length; initial++)
+		{
+			next = Math.floor(Math.random() * separate1.length);
+			hindi = separate1[initial];
+			separate1[initial] = separate1[next];
+			separate1[next] = hindi;
+		}
+		for(initial = 0; initial < separate1.length; initial++)
+		{
+			var button = document.createElement("button");
+			button.innerHTML = separate[initial];
+			body.appendChild("button");
+		}
+	}
+	else
+	{ 
+		document.getElementById("description").innerHTML = "";
+		document.getElementById("description1").innerHTML = ""; 
+		document.getElementById("description2").innerHTML = '';
 	}
 }
 

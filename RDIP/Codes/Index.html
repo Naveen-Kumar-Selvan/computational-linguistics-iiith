@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link href="Design.css" rel="stylesheet" type="text/css">
-    <script src="formingSentences.js"></script>
+    <!-- <script src="formingSentences.js"></script> -->
 	<title> cl-iiith.vlabs.ac.in/exp2/index.html# </title>
 </head>
 <body>
@@ -11,8 +11,8 @@
 		<h2> Experiment </h2>
 	</div>
 	<div class="main">
-		<select name="list" id="list" onchange="message();">
-			<option value="none" selected> ---Select Language--- </option>
+		<select name="list" id="list" onchange="message()">
+			<option value="none" selected id="list0"> ---Select Language--- </option>
 			<option id="list1"> English </option>
 			<option id="list2"> Hindi </option>
 		</select>
@@ -22,7 +22,10 @@
 	<div class="description">
 		<p id="description"></p>
 		<p id="description1"></p>
+		<p id="description2"></p>
+		<p id="description3"></p>
 	</div>
-				
+	
+		<script src="formingSentences.js"></script>
 </body>
 </html>

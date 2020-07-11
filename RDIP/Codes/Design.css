@@ -19,7 +19,7 @@
 
 #description {
 	font-size: 20px;
-	color: #00008B;
+	color: #0000AA;
 	font-weight: bold;
 	margin-left: 350px;
 	margin-top: 10px;
@@ -27,8 +27,15 @@
 
 #description1 {
 	font-size: 20px;
-	color: #00008B;
+	color: #0000FF;
 	font-style: italic;
 	margin-left: 550px;
 	margin-top: 0px;
+	line-height: 0.1;
+}
+
+#description2 {
+	font-size: 20px;
+	margin-left: 500px;
+	cursor: pointer;
 }
