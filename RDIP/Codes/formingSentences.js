@@ -140,6 +140,7 @@ var collectionOfHindiSentence = [
 // Dropdown List
 function message(){
 	document.getElementById("description2").innerHTML = '';
+	//document.getElementById("resetText").style.visibility = "hidden";
 	count = 0;
 	if(document.getElementById("list0").selected)
 	{
@@ -164,8 +165,21 @@ function message(){
 			var button = document.createElement("button");
 			button.innerHTML = separate[initial];
 			body.appendChild(button);
-		}
+			button.addEventListener ("click",function()
+			{
+				document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
+				document.getElementById("description4").innerHTML = this.innerHTML + " " ;
+				this.style.visibility = "hidden";
+				count = count + 1;
+				if (count >0)
+				{
+					document.getElementById("resetText").style.visibility = "visible";
+				}
+			var gettingData = string(docu.getElementById("description4").innerHTML).replace(/\s+$/, '');
+			data = gettingData.split(" ");
 			
+			});
+		}	
 	}
 	else if(document.getElementById("list2").selected)
 	{
@@ -173,7 +187,7 @@ function message(){
 		count = 0;
 		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
-		var hindi = collectionOfHindiSentenceSentence [Math.floor(Math.random() * collectionOfHindiSentence.length)];
+		var hindi = collectionOfHindiSentence [Math.floor(Math.random() * collectionOfHindiSentence.length)];
 		var body = document.getElementsByTagName("p")[3];
 		separate1 = hindi.split(' ');
 		for(initial = 0; initial < separate1.length; initial++)
@@ -186,8 +200,20 @@ function message(){
 		for(initial = 0; initial < separate1.length; initial++)
 		{
 			var button = document.createElement("button");
-			button.innerHTML = separate[initial];
+			button.innerHTML = separate1[initial];
 			body.appendChild("button");
+			//button.addEventListener ("click",function()
+			//{
+				//document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
+				//document.getElementById("description4").innerHTML = this.innerHTML + " " ;
+				//this.style.visibility = "hidden";
+				//count = count + 1;
+				//if (count == 1)
+				//{
+					//document.getElementById("reset").style.visibility = "visible";
+				//}
+			
+			//});
 		}
 	}
 	else
@@ -197,7 +223,3 @@ function message(){
 		document.getElementById("description2").innerHTML = '';
 	}
 }
-
-
-	
-
