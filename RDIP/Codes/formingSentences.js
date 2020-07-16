@@ -172,7 +172,7 @@ function message(){
 			
 			button.addEventListener ("click", function()
 			{
-				document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
+				document.getElementById("description3").innerHTML = "Formed Sentences <span style="font-style:italic; color:#0000FF; font-weight:lighter">(after selecting words):</span>"
 				this.style.visibility = "hidden";
 				count = count + 1;
 				if (count > 0)
@@ -215,7 +215,7 @@ function message(){
 			
 			button.addEventListener ("click", function()
 			{
-				document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
+				document.getElementById("description3").innerHTML = "Formed Sentences <span style="font-style:italic; color:#0000FF; font-weight:lighter">(after selecting words):</span>";
 				this.style.visibility = "hidden";
 				count = count + 1;
 				if (count > 0)
@@ -251,8 +251,9 @@ function ResetText()
 			document.getElementById('button'+i).style.display = "inline";
 			document.getElementById('button'+i).style.visibility = "visible";
 			document.getElementById('description3').style.visibility = "hidden";
-			document.getElementById('resetText').style.visibility="hidden"
-			document.getElementById('checkSentence').style.visibility="hidden"
+			document.getElementById('resetText').style.visibility = "hidden";
+			document.getElementById('checkSentence').style.visibility = "hidden";
+			document.getElementById('getCorrectSentence').style.visibility = "hidden";
 		}
 	}
 	document.getElementById('description4').innerHTML = " ";
@@ -277,5 +278,6 @@ function CheckSentence()
 	else 
 	{
 		document.getElementById('description5').innerHTML = "Wrong answer!!!";
+		document.getElementById('getCorrectSentence').style.visibility = "visible";
 	}
 }

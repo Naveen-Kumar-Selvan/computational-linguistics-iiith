@@ -105,3 +105,15 @@ button {
 	font-family: "Lucida Sans Unicode","Lucida Sans";
 	line-height: 0.1px;
 }
+
+#getCorrectSentence {
+	width: auto;
+    overflow: visible;
+	margin-left: 582px; 
+	display: inline-block;
+	height: 22px;
+	font-size: 14px;
+	font-family: "Lucida Sans Unicode","Lucida Sans";
+	line-height: 3px;
+	cursor: pointer;
+}
