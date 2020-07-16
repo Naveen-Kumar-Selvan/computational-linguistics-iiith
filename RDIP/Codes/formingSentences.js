@@ -171,11 +171,11 @@ function message(){
 				document.getElementById("description4").innerHTML = this.innerHTML + " " ;
 				this.style.visibility = "hidden";
 				count = count + 1;
-				if (count >0)
+				if (count > 0)
 				{
 					document.getElementById("resetText").style.visibility = "visible";
 				}
-			var gettingData = string(docu.getElementById("description4").innerHTML).replace(/\s+$/, '');
+			var gettingData = string(document.getElementById("description4").innerHTML).replace(/\s+$/, '');
 			data = gettingData.split(" ");
 			
 			});
@@ -202,18 +202,19 @@ function message(){
 			var button = document.createElement("button");
 			button.innerHTML = separate1[initial];
 			body.appendChild("button");
-			//button.addEventListener ("click",function()
-			//{
-				//document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
-				//document.getElementById("description4").innerHTML = this.innerHTML + " " ;
-				//this.style.visibility = "hidden";
-				//count = count + 1;
-				//if (count == 1)
-				//{
-					//document.getElementById("reset").style.visibility = "visible";
-				//}
-			
-			//});
+			button.addEventListener ("click",function()
+			{
+				document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
+				document.getElementById("description4").innerHTML = this.innerHTML + " " ;
+				this.style.visibility = "hidden";
+				count = count + 1;
+				if (count > 0)
+				{
+					document.getElementById("resetText").style.visibility = "visible";
+				}
+			var gettingData = string(document.getElementById("description4").innerHTML).replace(/\s+$/, '');
+			data = gettingData.split(" ");
+			});
 		}
 	}
 	else
@@ -222,4 +223,22 @@ function message(){
 		document.getElementById("description1").innerHTML = ""; 
 		document.getElementById("description2").innerHTML = '';
 	}
+}
+
+// Reset Function
+function ResetText()
+{
+	console.log("reset called");
+	for(i=0; i < separate.length || i < separate.length; i++)
+	{
+		console.log("button"+i, document.getElementById('button'+ i).style.visibility);
+		if(document.getElementById('button'+ i).style.visibility == "hidden")
+		{
+			document.getElementById('button'+i).style.display = "inline";
+			document.getElementById('button'+i).style.visibility = "visible";
+			document.getElementById('description3').style.visibility = "hidden";
+			document.getElementById('resetText').style.visibility="hidden"
+		}
+	}
+	document.getElementById('description4').innerHTML = " ";
 }
