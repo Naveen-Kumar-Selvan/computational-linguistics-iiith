@@ -1,4 +1,5 @@
 // English Sentences
+var correctSentence = "";
 var sentenceEnglish1 = [
 	'John ate an apple before afternoon',
 	'before afternoon John ate an apple',
@@ -151,6 +152,8 @@ function message(){
 		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
 		var english = collectionOfEnglishSentence [Math.floor(Math.random() * collectionOfEnglishSentence.length)];
+		//console.log("english", english);
+		correctSentence = english;
 		var body = document.getElementsByTagName("p")[3];
 		separate = english.split(' ');
 		for(initial = 0; initial < separate.length; initial++)
@@ -192,6 +195,8 @@ function message(){
 		document.getElementById("description").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 		document.getElementById("description1").innerHTML = "(select the buttons in proper order)"
 		var hindi = collectionOfHindiSentence [Math.floor(Math.random() * collectionOfHindiSentence.length)];
+		//console.log("hindi", hindi);
+		correctSentence = hindi;
 		var body = document.getElementsByTagName("p")[3];
 		separate1 = hindi.split(' ');
 		for(initial = 0; initial < separate1.length; initial++)
@@ -251,6 +256,26 @@ function ResetText()
 		}
 	}
 	document.getElementById('description4').innerHTML = " ";
-	//document.getElementById('description3').style.visibility = "visible";
-	//document.getElementById('checkSentence').style.visibility="visible"
+}
+
+// Check the Sentence Function
+function CheckSentence() 
+{
+	var s1Parts= document.getElementById("description4").innerHTML.split(' ');
+	var s2Parts= correctSentence.split(' ');
+	var score = 0;
+	for(var i = 0; i < s1Parts.length; i++)
+	{
+		if(s1Parts[i+1] === s2Parts[i])
+		score++;   
+	}
+	//console.log("score", score, "length", s1Parts.length);
+	if (score === s1Parts.length) 
+	{
+		document.getElementById('description5').innerHTML = "Right answer!!!";
+	} 
+	else 
+	{
+		document.getElementById('description5').innerHTML = "Wrong answer!!!";
+	}
 }
