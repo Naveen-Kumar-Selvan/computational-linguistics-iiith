@@ -164,20 +164,24 @@ function message(){
 		{
 			var button = document.createElement("button");
 			button.innerHTML = separate[initial];
+			button.id = "button" + initial;
 			body.appendChild(button);
-			button.addEventListener ("click",function()
+			
+			button.addEventListener ("click", function()
 			{
 				document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
-				document.getElementById("description4").innerHTML = this.innerHTML + " " ;
 				this.style.visibility = "hidden";
 				count = count + 1;
 				if (count > 0)
 				{
 					document.getElementById("resetText").style.visibility = "visible";
 				}
-			var gettingData = string(document.getElementById("description4").innerHTML).replace(/\s+$/, '');
-			data = gettingData.split(" ");
-			
+				if (count == separate.length) {
+					document.getElementById("checkSentence").style.visibility = "visible"; 
+				}
+				var gettingData = document.getElementById("description4").innerHTML.replace(/\s+$/, '');
+				data = gettingData.split(" ");
+				document.getElementById("description4").innerHTML = gettingData + " " + this.innerHTML;
 			});
 		}	
 	}
@@ -201,19 +205,24 @@ function message(){
 		{
 			var button = document.createElement("button");
 			button.innerHTML = separate1[initial];
+			button.id= "button"+initial;
 			body.appendChild("button");
-			button.addEventListener ("click",function()
+			
+			button.addEventListener ("click", function()
 			{
 				document.getElementById("description3").innerHTML = "Formed Sentences (after selecting words)";
-				document.getElementById("description4").innerHTML = this.innerHTML + " " ;
 				this.style.visibility = "hidden";
 				count = count + 1;
 				if (count > 0)
 				{
 					document.getElementById("resetText").style.visibility = "visible";
 				}
-			var gettingData = string(document.getElementById("description4").innerHTML).replace(/\s+$/, '');
-			data = gettingData.split(" ");
+				if (count == separate1.length) {
+					document.getElementById("checkSentence").style.visibility = "visible"; 
+				}
+				var gettingData = document.getElementById("description4").innerHTML.replace(/\s+$/, '');
+				data = gettingData.split(" ");
+				document.getElementById("description4").innerHTML = gettingData + " " + this.innerHTML;
 			});
 		}
 	}
@@ -229,7 +238,7 @@ function message(){
 function ResetText()
 {
 	console.log("reset called");
-	for(i=0; i < separate.length || i < separate.length; i++)
+	for(i = 0; i < separate.length || i < separate.length; i++)
 	{
 		console.log("button"+i, document.getElementById('button'+ i).style.visibility);
 		if(document.getElementById('button'+ i).style.visibility == "hidden")
@@ -238,7 +247,10 @@ function ResetText()
 			document.getElementById('button'+i).style.visibility = "visible";
 			document.getElementById('description3').style.visibility = "hidden";
 			document.getElementById('resetText').style.visibility="hidden"
+			document.getElementById('checkSentence').style.visibility="hidden"
 		}
 	}
 	document.getElementById('description4').innerHTML = " ";
+	//document.getElementById('description3').style.visibility = "visible";
+	//document.getElementById('checkSentence').style.visibility="visible"
 }
