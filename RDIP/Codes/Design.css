@@ -1,18 +1,36 @@
-#heading {
+#all {
+	background-color: white;
+	height: 1075px;
+	width: 1125px;
+}
+
+#head {
+	background-color: #CCEEEE;
+	padding: 5px 30px;
+	letter-spacing: 0;
+	width: 1120px;
 	font-size: 34px;
-	margin-left: 25px;
+	margin-left: -25px;
 	color: grey;
 	font-weight: bold;
 }
 
-h2{
-	line-height: 0.1px;
+body {
+	margin-top: 50px;
+	max-width: 1150px;
+	max-height: 1000px;
+	margin: auto;
+	background-color: #1D3559;
+}
+
+h2 {
+	line-height: 100px;
 	color: #222222;
-    font-family: "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", "Trebuchet MS","Lucida Grande", "Lucida Sans Unicode","Lucida Sans",Verdana, Arial,sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    margin-left: 40px;
-    padding: 5px 0 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	font-size: 24px;
+	font-weight: 300;
+	margin-left: 5px;
+	padding: 5px 0 30px;
 }
 
 .container-fluid {
@@ -22,7 +40,7 @@ h2{
 
 #list {
 	text-align: width/2;
-	margin-left: 600px;
+	margin-left: 475px;
 	background-color: white;
 }
 
@@ -30,41 +48,42 @@ h2{
 	font-size: 20px;
 	color: #0000AA;
 	font-weight: bold;
-	margin-left: 250px;
+	margin-left: 130px;
 	margin-top: 10px;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
 }
 
 #description1 {
 	font-size: 20px;
 	color: #0000FF;
 	font-style: italic;
-	margin-left: 510px;
+	margin-left: 400px;
 	margin-top: 0px;
 	line-height: 0.1;
 }
 
 #description2 {
 	font-size: 20px;
-	margin-left: 500px;
 	cursor: pointer;
+	text-align: center;
 }
 
 button {
 	margin: 10px;
-	text-align: center;
-	display: inline-block;
+	display: inline-blockblock;
 	font-size: 14px;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	align-items: center;
+	justify-content: center;
+	float: center;
 }
 
-#description3 {
+#descript {
 	font-size: 20px;
 	line-height: 7px;
 	color: #0000AA;
-	font-weight: bold;
 	text-align: center;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
 }
 
 #description4 {
@@ -73,47 +92,51 @@ button {
 	padding: 5px;
 	font-weight: 500;
 	text-align: center;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
-	line-height: 5px;
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	line-height: 25px;
 }
 
 #resetText {
 	width: auto;
-	margin-left: 580px; 
+	margin-left: 480px;
 	display: inline-block;
 	height: 22px;
 	font-size: 14px;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
 	line-height: 3px;
 	cursor: pointer;
 }
 
 #checkSentence {
-	margin-left: 520px; 
+	margin-left: 420px;
 	display: inline-block;
 	height: 25px;
 	font-size: 14px;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
 	line-height: 3px;
 	cursor: pointer;
 }
 
 #description5 {
 	text-align: center;
-    font-size: 30px;
-    color: #FF0000;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
-	line-height: 0.1px;
+	font-size: 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	line-height: 2;
 }
 
-#getCorrectSentence {
-	width: auto;
-    overflow: visible;
-	margin-left: 582px; 
-	display: inline-block;
-	height: 22px;
+#description6 {
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	line-height: 20px;
+	font-size: 16px;
+	margin-top: 50px;
+}
+
+#allButtons {
+	float: center;
+	margin-left: 480px;
 	font-size: 14px;
-	font-family: "Lucida Sans Unicode","Lucida Sans";
-	line-height: 3px;
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	display: block;
 	cursor: pointer;
 }
