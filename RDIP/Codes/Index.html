@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+      <link href="Design.css" rel="stylesheet" type="text/css">
+      <title> cl-iiith.vlabs.ac.in/exp2/index.html# </title>
+   </head>
+   <body>
+      <div id="head">
+         <p> Forming Sentences - 2 </p>
+      </div>
+      <div id="all">
+         <div class="container-fluid">
+            <h2> Experiment </h2>
+         </div>
+         <div class="main">
+            <select name="list" id="list" onchange="message()">
+               <option value="none" selected id="list0"> ---Select Language--- </option>
+               <option id="list1"> English </option>
+               <option id="list2"> Hindi </option>
+            </select>
+         </div>
+         <br/>
+         <br/>
+         <div class="description">
+            <p id="description"></p>
+            <p id="description1"></p>
+            <p id="description2"></p>
+            <p id="descript"><span id="description3" style="font-weight:bold;"></span> <span id="description3.1" style="color:#0000FF; font-style:italic; font-family: ""Lucida Sans Unicode","Lucida Sans";" font-size: 30px; line-height: 7px; font-weight:bold;></span></p>
+            <p id="description4"></p>
+         </div>
+         <button id="resetText" onclick="ResetText()" style="visibility: hidden;" >Re-form the sentence</button><br/><br/>
+         <button id="checkSentence" onclick="CheckSentence()" style="visibility: hidden;" >Check the correctness of this sentence</button>
+         <p id="description5"></p>
+         <div id="allButtons"></div>
+         <div id="description6" >
+         </div>
+      </div>
+	  <script src="formingSentences.js"></script>
+   </body>
+</html>
