@@ -61,7 +61,7 @@ var correctAnswers = [
 
 var collectionOfEnglishSentence = [
 	'John ate an apple before afternoon',
-	'some students like to study in the night',
+	'some students like to study at night',
 	'John and Mary went to church',
 	'John went to church after eating',
 	'did he go to market',
