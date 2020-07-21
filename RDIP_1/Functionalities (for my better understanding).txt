@@ -1,0 +1,39 @@
+			** ------------------------ UNDERSTANDING OF FUNCTIONS IN VIRTUAL LABS: ------------------------- **
+
+INTRODUCTION SECTION:
+
+	// When this tab is pressed, it should show the Introduction of the experiment.
+
+THEORY SECTION:
+
+	// When this tab is pressed, it should display the Theory of the experiment.
+
+OBJECTIVE SECTION:
+
+	// When this tab is pressed, it should show the Objective of the experiment.
+
+EXPERIMENT SECTION:
+  
+	// When this tab is pressed, it should a drop down menu with three values i.e. Corpus1, Corpus2, Corpus3.
+	
+	// When any of the value is selected, it should a paragraph and under that a message and a table must be displayed along with a submit button.
+	
+	// There will be two input boxes which will get input from the user if the given inputs match with the coded inputs then the input boxes turn into green otherwise they will turn into red and the message should be displayed below the submit as right answer or wrong answer.
+	
+	// If the answer is right, another button called continue should be displayed.
+	
+	// When that continue button is pressed, a message must be displayed along an input box and a submit button and the submit button will be hidden.
+	
+	// The input box gets input from the user and checks with correct answer.
+	
+	// If the answer is right, the box turns into green and will a display a message as Right Answer and if it is wrong, it will a display a message as Wrong Answer and turns the box into red.
+	
+QUIZZES SECTION:
+
+	// When this tab is pressed, it should display the Quizzes of the experiment.
+
+PROCEDURE SECTION:
+
+	// When this tab is pressed, it should show the Procedure of the experiment.
+
+    **------------------------------------------------- THE END -----------------------------------------------------------**
