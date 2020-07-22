@@ -45,17 +45,18 @@
 					document.getElementById('types').style.backgroundColor='green' ;
 					document.getElementById('description2').style.color = "#008000";
 					document.getElementById("description2").innerHTML = "Right Answer!!!";
+					document.getElementById("conButton").style.visibility="visible";
 					//}
 				}
 				 else if(document.getElementById('tokens').value == 111)
 				{
-					alert("document.getElementById('tokens').value");
 					if( document.getElementById('types').value == 65)
 					{
 					document.getElementById('tokens').style.backgroundColor='green' ;
 					document.getElementById('types').style.backgroundColor='green' ;
 					document.getElementById('description2').style.color = "#008000";
 					document.getElementById("description2").innerHTML = "Right Answer!!!";
+					document.getElementById("conButton").style.visibility="visible";
 					}
 				}
 				else if(document.getElementById('tokens').value == 219)
@@ -66,6 +67,7 @@
 					document.getElementById('types').style.backgroundColor='green' ;
 					document.getElementById('description2').style.color = "#008000";
 					document.getElementById("description2").innerHTML = "Right Answer!!!";
+					document.getElementById("conButton").style.visibility="visible";
 					}
 				}
 				else 
@@ -75,4 +77,15 @@
 				document.getElementById('description2').style.color = "#FF0000";
 				document.getElementById("description2").innerHTML = " Wrong Answer!!!";
 				}
+			}
+			
+			function continueButton() {
+				document.getElementById("nextchk").style.backgroundColor=''
+				document.getElementById("button").style.visibility="hidden"
+				document.getElementById("description3").innerHTML="Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types."
+				document.getElementById("description4").innerHTML="#new types:";
+				document.getElementById("conButton").innerHTML="Submit"	
+				document.getElementById("nextchk").style.visibility="visible"
+				document.getElementById("nextchk").style.backgroundColor=""
+				document.getElementById("description2").innerHTML="";
 			}
