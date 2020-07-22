@@ -1,4 +1,4 @@
-		var Snowball = require('snowball');
+				var Snowball = require('snowball');
 		var stemmer = new Snowball('English');
 
 	
@@ -49,8 +49,9 @@
 					document.getElementById('tokens').style.backgroundColor='green' ;
 					document.getElementById('types').style.backgroundColor='green' ;
 					document.getElementById('description2').style.color = "#008000";
-					document.getElementById("description2").innerHTML = "Right Answer!!!";
-					document.getElementById("conButton").style.visibility="visible";
+					document.getElementById("description2").innerHTML = "Right Answer";
+					//document.getElementById("conButton").style.visibility="visible";
+					document.getElementById("allButtons").innerHTML = "<input type='submit' value='Continue'  onclick='continueButton()'>";
 					//}
 				}
 				 else if(document.getElementById('tokens').value == 111)
@@ -60,8 +61,9 @@
 					document.getElementById('tokens').style.backgroundColor='green' ;
 					document.getElementById('types').style.backgroundColor='green' ;
 					document.getElementById('description2').style.color = "#008000";
-					document.getElementById("description2").innerHTML = "Right Answer!!!";
-					document.getElementById("conButton").style.visibility="visible";
+					document.getElementById("description2").innerHTML = "Right Answer";
+					//document.getElementById("conButton").style.visibility="visible";
+					document.getElementById("allButtons").innerHTML = "<input type='submit' value='Continue'  onclick='continueButton()'>";
 					}
 				}
 				else if(document.getElementById('tokens').value == 219)
@@ -71,8 +73,9 @@
 					document.getElementById('tokens').style.backgroundColor='green' ;
 					document.getElementById('types').style.backgroundColor='green' ;
 					document.getElementById('description2').style.color = "#008000";
-					document.getElementById("description2").innerHTML = "Right Answer!!!";
-					document.getElementById("conButton").style.visibility="visible";
+					document.getElementById("description2").innerHTML = "Right Answer";
+					//document.getElementById("conButton").style.visibility="visible";
+					document.getElementById("allButtons").innerHTML = "<input type='submit' value='Continue'  onclick='continueButton()'>";
 					}
 				}
 				else 
@@ -80,7 +83,7 @@
 				document.getElementById('tokens').style.backgroundColor='red' ; 
 				document.getElementById('types').style.backgroundColor='red' ; 
 				document.getElementById('description2').style.color = "#FF0000";
-				document.getElementById("description2").innerHTML = " Wrong Answer!!!";
+				document.getElementById("description2").innerHTML = " Wrong Answer";
 				}
 			}
 			
@@ -89,8 +92,40 @@
 				document.getElementById("button").style.visibility="hidden"
 				document.getElementById("description3").innerHTML="Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types."
 				document.getElementById("description4").innerHTML="#new types:";
-				document.getElementById("conButton").innerHTML="Submit"	
+				//document.getElementById("conButton").innerHTML="Submit"	
 				document.getElementById("nextchk").style.visibility="visible"
 				document.getElementById("nextchk").style.backgroundColor=""
 				document.getElementById("description2").innerHTML="";
+				document.getElementById("allButtons").innerHTML = "<input type='submit'  value='Submit'  onclick='submitButton1()'>";
+			}
+			
+			function submitButton1() {
+				if(document.getElementById('nextchk').value == 73)
+				{
+					//document.getElementById("nextchk").style.visibility="visible";
+					document.getElementById('nextchk').style.backgroundColor='green' ;
+					document.getElementById('description6').style.color = "#008000";
+					document.getElementById("description6").innerHTML = "Right Answer";
+				}
+				else if(document.getElementById('nextchk').value == 56)
+				{
+					//document.getElementById("nextchk").style.visibility="visible";
+					document.getElementById('nextchk').style.backgroundColor='green' ;
+					document.getElementById('description6').style.color = "#008000";
+					document.getElementById("description6").innerHTML = "Right Answer";
+				}
+				else if(document.getElementById('nextchk').value == 84)
+				{	
+					//document.getElementById("nextchk").style.visibility="visible";
+					document.getElementById('nextchk').style.backgroundColor='green' ;
+					document.getElementById('description6').style.color = "#008000";
+					document.getElementById("description6").innerHTML = "Right Answer";
+				}
+				else
+				{
+					//document.getElementById("nextchk").style.visibility="visible";
+					document.getElementById('nextchk').style.backgroundColor='red' ;
+					document.getElementById('description6').style.color = "#FF0000";
+					document.getElementById("description6").innerHTML = "Wrong Answer";
+				}
 			}
