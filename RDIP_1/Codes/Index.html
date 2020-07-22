@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
 	  <title> http://cl-iiith.vlabs.ac.in/exp3/index.html# </title>
-	  <link href="design.css" rel="stylesheet" type="text/css">
+	  <link href="design.css" rel="stylesheet" type="text/css"> 
    </head>
    <body>
 		<div id="head">
@@ -20,8 +20,22 @@
 				   <option id="list2"> Corpus 2 </option>
 				   <option id="list3"> Corpus 3 </option>
 				</select>
+			</div><br/>
+			<div class="description">
+				<p id="description"></p>
+				<p id="description1"></p><br/><br/>
+				<form name="table">
+					<table class="centeredTable" id="table" style="visibility: hidden"; >
+						<tr><td>#tokens:</td>
+						<td><input type="text"  name="tokens" id="tokens"></td></tr>
+						<tr><td>#types:</td>
+						<td><input type="text" name="types" id="types"></td></tr>
+					</table>
+				</form><br>
+				<button id="button" style="visibility: hidden" onclick="submitButton();"> Submit </button>
 			</div>
 		</div>
-		<script src="script.js"></script>
+		<script src="script.js"></script> 
+
 	</body>
 </html>
