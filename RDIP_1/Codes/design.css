@@ -32,13 +32,14 @@ body {
 #description {
 	font-size: 16px;
 	margin-left: 130px;
+	margin-right: 130px;
 	margin-top: 10px;
 	font-family: "Lucida Sans Unicode", "Lucida Sans";
 }
 
 #description1 {
 	font-size: 20px;
-	margin-left: 400px;
+	margin-left: 350px;
 	margin-top: 0px;
 	line-height: 0.1;
 }
@@ -65,11 +66,19 @@ td,tr
 
 #button {
 	width: auto;
-	margin-left: 480px;
+	margin-left: 530px;
 	display: inline-block;
 	height: 22px;
 	font-size: 14px;
 	font-family: "Lucida Sans Unicode", "Lucida Sans";
 	line-height: 3px;
 	cursor: pointer;
+}
+
+#description2 {
+	text-align: center;
+	font-size: 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Sans";
+	line-height: 0;
+	margin-top: 5px;
 }

@@ -33,3 +33,46 @@
 					document.getElementById("description1").innerHTML = "";
 				}	
 			}	
+			
+			function submitButton() {
+				 if(document.getElementById("tokens").value == 169 && document.getElementById('types').value == 80 )
+				{
+					//alert(document.getElementById("tokens").value);
+					//alert(document.getElementById("types").value);
+					//if( document.getElementById('types').value == 65)
+					//{
+					document.getElementById('tokens').style.backgroundColor='green' ;
+					document.getElementById('types').style.backgroundColor='green' ;
+					document.getElementById('description2').style.color = "#008000";
+					document.getElementById("description2").innerHTML = "Right Answer!!!";
+					//}
+				}
+				 else if(document.getElementById('tokens').value == 111)
+				{
+					alert("document.getElementById('tokens').value");
+					if( document.getElementById('types').value == 65)
+					{
+					document.getElementById('tokens').style.backgroundColor='green' ;
+					document.getElementById('types').style.backgroundColor='green' ;
+					document.getElementById('description2').style.color = "#008000";
+					document.getElementById("description2").innerHTML = "Right Answer!!!";
+					}
+				}
+				else if(document.getElementById('tokens').value == 219)
+				{
+					if( document.getElementById('types').value == 95)
+					{
+					document.getElementById('tokens').style.backgroundColor='green' ;
+					document.getElementById('types').style.backgroundColor='green' ;
+					document.getElementById('description2').style.color = "#008000";
+					document.getElementById("description2").innerHTML = "Right Answer!!!";
+					}
+				}
+				else 
+				{
+				document.getElementById('tokens').style.backgroundColor='red' ; 
+				document.getElementById('types').style.backgroundColor='red' ; 
+				document.getElementById('description2').style.color = "#FF0000";
+				document.getElementById("description2").innerHTML = " Wrong Answer!!!";
+				}
+			}
