@@ -1,0 +1,30 @@
+#head {
+	background-color: #CCEEEE;
+	padding: 5px 30px;
+	letter-spacing: 0;
+	width: 1180px;
+	font-size: 34px;
+	margin-left: -25px;
+	color: grey;
+	font-weight: bold;
+}
+
+body {
+	margin-top: 50px;
+	max-width: 1150px;
+	max-height: 1000px;
+	margin: auto;
+	background-color: #1D3559;
+}
+
+#list {
+	text-align: width/2;
+	margin-left: 475px;
+	background-color: white;
+}
+
+#all {
+	background-color: white;
+	height: 1075px;
+	width: 1125px;
+}
